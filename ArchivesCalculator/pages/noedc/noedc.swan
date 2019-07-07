@@ -1,0 +1,23 @@
+<!-- detail.swan -->
+<view class="noEDC">
+    <view class="top">
+    	<image class="logo" src="../../images/logo.jpg"></image>
+        <text class="txt">怀孕了，来菠萝孕育</text>
+    </view>
+    <scroll-view class='main-scroll' scroll-y>
+	    <view class="con">
+            <image class="topImg" src="https://wx.boluoyunyu.com/jiandangshenqi/calculator/img/calculator_banner.gif"></image>
+            <view class="j_tipA">填写你的预产期，为你拟定专属的建档日期规划：</view>
+            <view class="j_tipB">请准确填写，会影响到为你拟定的建档规划的日期。填写后不能修改。</view>
+            <view>
+                <picker mode="date" value="{{time}}" start="2019-01-01" end="2058-01-29" bindchange="bindTimeChange">
+                <view class="picker">
+                    <view class="inputEDC">{{time}}</view>
+                    <!-- <input class="inputEDC" value="{{time}}" placeholder="请输入预产期"/> -->
+                </view>
+            </picker>
+            <view bind:tap="noedc_submit" class="btn">查看我的专属规划日期</view>
+            </view>
+	    </view>
+    </scroll-view>
+</view>

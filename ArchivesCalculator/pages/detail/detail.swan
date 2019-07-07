@@ -1,0 +1,43 @@
+<!-- detail.swan -->
+<view class="hDetail">
+    <view class="top">
+    	<image class="logo" src="../../images/logo.jpg"></image>
+        <text class="txt">怀孕了，来菠萝孕育</text>
+    </view>
+    <scroll-view class='main-scroll' scroll-y>
+	    <view class="con">
+	        <view class="hInfo">
+	       		<view class="left">
+					<image src="{{data.hInfo.picture}}"></image>
+				</view>
+				<view class="right">
+					<view class="name">{{data.hInfo.name}}</view>
+					<view class="label">{{data.hInfo.grade}}</view>
+	                <view class="label">{{data.hInfo.dName}}</view>
+	                <view style="clear:both"></view>
+					<view class="address">{{data.hInfo.address}}</view>
+	                <button class="experience" href="../../hospitalDetail?id=9">查看建档攻略和网友经验</button>
+					<view style="clear:both"></view>
+	            </view>
+	        </view>
+	        <view class="aInfo">
+	           	<view class="title">我的专属建档计划</view>
+                <block s-if="data.canArchive == 1">
+                    
+                    <view class="aItem" s-for="data.stepList">
+                        <view class="aInfo">
+                            <view class="num">{{index+1}}</view>
+                            <view class="txt">{{item.curDate}}</view>
+                            <view class="txt">{{item.curWeek}}</view>
+                            <view class="txt" style="float:right;">{{item.yt}}</view>
+                        </view>
+                        <view class="aCon">{{item.stepDes}}</view>
+	           	    </view>  
+                </block>
+                <block s-else>
+                    <view class="notArchive">已封档</view>
+                </block>
+	        </view>
+	    </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,126 @@
+/* 医院列表 */
+.hList .con .info{
+	border-bottom:0.01rem solid #dadada;
+	padding:0.4rem;
+}
+.hList .con .info .iItem{
+	line-height:1.6rem;
+    font-size:1rem;
+}
+.hList .con .info .iItem .iValue{
+	color:#F29D3B;
+}
+.hList .con .search{
+	box-sizing:border-box;
+	padding:0.6rem;
+	position:relative;
+}
+.hList .con .search .keyBox{
+	display:flex;
+}
+.hList .con .search .keyBox .keyInput{
+	flex:1 1 auto;
+	line-height:1.99rem;
+    height: 1.99rem;
+	font-size:1rem;
+	padding:0rem 0.2rem;
+	outline:none;
+	border:0.01rem solid #FFCC33;
+}
+.hList .con .search .keyBox .btn0{
+	flex:0 0 auto;
+	width:3rem;
+	height:2rem;
+	font-size:1rem;
+	text-align:center;
+	color:#fff;
+	/* border-radius:0.2rem;
+	margin-left:0.2rem; */
+	line-height:2rem;
+	background-color:#FFCC33;
+    border-radius: 0;
+    padding: 0;
+}
+.hList .con .searchTip{
+	padding:0.4rem;
+	line-height:2rem;
+	font-size:1rem;
+	color:#FF9933;
+	font-weight:bold;
+}
+.hList .con .loading{
+	display:block;
+	width:100%;
+	line-height:2rem;
+	text-align:center;
+	font-size:1rem;
+}
+.hList .con .loadMore{
+	display:none;
+	width:100%;
+	line-height:2rem;
+	text-align:center;
+	font-size:1rem;
+}
+.hList .con .noData{
+	display:none;
+	color:#999;
+	width:100%;
+	line-height:2rem;
+	text-align:center;
+	font-size:1rem;
+}	
+.hList .con .hospitalList{}
+.hList .con .hospitalList .hItem{
+	display:flex;
+	border-bottom:0.02rem solid #FFCC33;
+	padding:0.5rem;
+}
+.hList .con .hospitalList .hItem .left{
+	flex:0 0 auto;
+	width:6rem;
+	height:6rem;
+	padding-right:0.4rem;
+}
+.hList .con .hospitalList .hItem .left image{
+	width:100%;
+	height:100%;
+	display:block;
+}
+.hList .con .hospitalList .hItem .right{
+	flex:1 1 auto;
+	height:6rem;
+	padding-right:0.5rem;
+}
+.hList .con .hospitalList .hItem .right .name{
+	font-size:1.2rem;
+	color:#000;
+	font-weight:600;
+	line-height:2rem;
+	max-height:2rem;
+	overflow:hidden;
+}
+.hList .con .hospitalList .hItem .right .canArchive{
+	font-size:0.8rem;
+	color:#fff;
+	background-color:#FFCC33;
+	line-height:2rem;
+	height:2rem;
+	display:block;
+	float:right;
+	width:4rem;
+	text-align:center;
+	border-radius:0.2rem;
+}
+.hList .con .hospitalList .hItem .right .notArchive{
+	font-size:0.8rem;
+	color:#fff;
+	background-color:#ccc;
+	line-height:2rem;
+	height:2rem;
+	display:block;
+	float:right;
+	width:4rem;
+	text-align:center;
+	border-radius:0.2rem;
+}

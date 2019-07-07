@@ -1,0 +1,48 @@
+<!-- hlist.swan -->
+<view class="hList">
+    <view class="top">
+    	<image class="logo" src="../../images/logo.jpg"></image>
+        <text class="txt">怀孕了，来菠萝孕育</text>
+    </view>
+    <scroll-view class='main-scroll' scroll-y  data-id="{{page}}" data-edc="{{uInfo.fedc}}" bind:scrolltolower="hasMore">
+	    <view class="con">
+            <view class="info">
+                <view class="iItem">【{{userInfo.nickName}}】您的末次月经日：<text class="iValue" id="menses">{{edcinfo.mDate}}</text></view>
+                <view class="iItem">【{{userInfo.nickName}}】您的预产期：<text class="iValue" id="myEdc">{{edcinfo.eDate}}</text></view>
+                <view class="iItem">【{{userInfo.nickName}}】今天是您<text class="iValue" id="myEdcDay">孕{{edcinfo.pDays}}</text></view>
+            </view>
+            
+            <view class="search">
+                <form bindsubmit="formSubmit">
+                <view class="keyBox">
+                    <input class="keyInput" name="name" placeholder="请输入搜索关键词"/>
+                    <input class="keyInput" value="{{uInfo.fedc}}" name="edc" style="display:none;"/>
+                    <input class="keyInput" value="{{page}}" name="num" style="display:none;"/>
+                    <button class="btn0" form-type="submit">搜&nbsp;&nbsp;索</button>
+                </view>
+                </form>
+            </view>
+            
+            <view class="searchTip">点击意向医院，查看专属您的建档日期规划：</view>
+            
+            <view class="hospitalList" id="hospitalList">
+                <view class="hItem" s-for="hospitals" bind:tap="showDetail" data-id="{{item.id}}" data-edc="{{edcinfo.eDate}}">
+                    <view class="left">
+                        <image src="{{item.picture}}"></image>
+                    </view>
+                    <view class="right">
+                        <view class="name">{{item.name}}</view>
+                        <block s-if="{{item.canArchive == 0}}">
+                            <view class="notArchive">已封档</view>
+                        </block>
+                        <block s-else>
+                            <view class="canArchive">可建档</view>
+                        </block>
+                    </view>
+                </view>
+            </view>
+            <!-- <view s-if="{{hasMore}}" class="loadMore" id="loadMore" bind:tap="hasMore" data-id="{{page}}" data-edc="{{uInfo.fedc}}" style="display: block;">加载更多</view>  
+            <view s-else class="noData" id="noData" style="display: block;">我是有底线的</view>     -->
+        </view>
+    </scroll-view>
+</view>

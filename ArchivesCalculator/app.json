@@ -1,0 +1,13 @@
+{
+    "pages": [
+        "pages/hlist/hlist",
+        "pages/noedc/noedc",
+        "pages/detail/detail"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#FFCC33",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "",
+        "backgroundTextStyle": "light"
+    }
+}

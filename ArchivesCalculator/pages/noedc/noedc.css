@@ -1,0 +1,69 @@
+/*是否有预产期*/
+.noEDC .con .topImg{
+	width:100%;
+}
+.noEDC .con .tip{
+	text-align:center;
+	padding:0.2rem;
+	line-height:0.8rem;
+	font-size:0.5rem;
+	color:#FF9933;
+}
+.noEDC .con .j_tipA{
+	text-align:center;
+	padding:1rem;
+	line-height:2rem;
+	font-size:1rem;
+	color:#FF9933;
+}
+.noEDC .con .j_tipB{
+	text-align:center;
+	padding:1rem;
+	line-height:2rem;
+	font-size:1rem;
+	color:#999;
+}
+.noEDC .con .qrcode{
+	
+}
+.noEDC .con .qrcode .tip1{
+	color:#999999;
+	text-align:center;
+	padding:0.2rem;
+	line-height:0.8rem;
+	font-size:0.4rem;
+}
+.noEDC .con .qrcode .codeImg{
+	display:block;
+	width:70%;
+	margin:auto;
+}
+.noEDC .con .btn{
+	display:block;
+	box-sizing:border-box;
+	margin:1rem auto;
+	font-size:1rem;
+	line-height:3rem;
+	border-radius:0.5rem;
+	outline:none;
+	height:3rem;
+	width:90%;
+	text-align:center;
+	background-color:#FF9933;
+	border:none;
+	padding:0rem 0.4rem;
+	color:#fff;
+}
+
+.noEDC .con .inputEDC{
+	display:block;
+	box-sizing:border-box;
+	margin:0.4rem auto auto auto;
+	font-size:1rem;
+	line-height:3rem;
+	border:0.05rem solid #ccc;
+	color:#666;
+	padding:0rem 0.4rem;
+	width:90%;
+	height:3rem;
+}
